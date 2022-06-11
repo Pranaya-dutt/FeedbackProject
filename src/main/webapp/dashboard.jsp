@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Dashboard</title>
 </head>
 <body>
 	
@@ -17,7 +17,7 @@
 	%>
 	
 	<div>
-		<h1>Active Requests</h1>
+		<h1 style="text-align: center;">Active Requests</h1>
 		<table align = "center" cellpadding = "5" cellspacing ="5" border ="2">
 			<tr>
 				<th>Id</th>
@@ -49,7 +49,7 @@
 	
 	
 	<div>
-		<h1>Archive Requests</h1>
+		<h1 style="text-align: center;">Archive Requests</h1>
 		<table align = "center" cellpadding = "5" cellspacing ="5" border ="2">
 			<tr>
 				<th>Id</th>
@@ -81,8 +81,8 @@
 	
 	
 	<br>
-	<form action="login">
-		<input type="submit" value = "Logout">
+	<form action="login" style="text-align:center; margin-top: 200px;">
+		<input type="submit" value = "Logout" style="padding: 5px">
 	</form>
 	
 	
