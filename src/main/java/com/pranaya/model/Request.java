@@ -2,6 +2,7 @@ package com.pranaya.model;
 
 public class Request {
 	
+	private int rid;
 	private String rname;
 	private String remail;
 	private String rmessage;
@@ -9,41 +10,96 @@ public class Request {
 	
 	
 	
+	public int getRid() {
+		return rid;
+	}
+
+
+
+	public void setRid(int rid) {
+		this.rid = rid;
+	}
+
+
+
 	public Request() {
 		super();
 	}
 
-	public Request(String fname, String femail, String fmessage) {
-		super();
-		this.rname = fname;
-		this.remail = femail;
-		this.rmessage = fmessage;
-	}
 	
-	public String getFname() {
+
+	public Request(int rid) {
+		super();
+		this.rid = rid;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Request [rname=" + rname + ", remail=" + remail + ", rmessage=" + rmessage + ", rstatus=" + rstatus
+				+ "]";
+	}
+
+
+
+	public Request(String rname, String remail, String rmessage) {
+		super();
+		this.rname = rname;
+		this.remail = remail;
+		this.rmessage = rmessage;
+	}
+
+
+
+	public String getRname() {
 		return rname;
 	}
-	public void setFname(String fname) {
-		this.rname = fname;
+
+
+
+	public void setRname(String rname) {
+		this.rname = rname;
 	}
-	public String getFemail() {
+
+
+
+	public String getRemail() {
 		return remail;
 	}
-	public void setFemail(String femail) {
-		this.remail = femail;
+
+
+
+	public void setRemail(String remail) {
+		this.remail = remail;
 	}
-	public String getFmessage() {
+
+
+
+	public String getRmessage() {
 		return rmessage;
 	}
-	public void setFmessage(String fmessage) {
-		this.rmessage = fmessage;
+
+
+
+	public void setRmessage(String rmessage) {
+		this.rmessage = rmessage;
 	}
-	public boolean isFstatus() {
+
+
+
+	public boolean isRstatus() {
 		return rstatus;
 	}
-	public void setFstatus(boolean fstatus) {
-		this.rstatus = fstatus;
+
+
+
+	public void setRstatus(boolean rstatus) {
+		this.rstatus = rstatus;
 	}
+
+	
+	
 	
 	
 	
